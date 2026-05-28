@@ -37,16 +37,14 @@
 - DeepSeek：添加 `DEEPSEEK_API_KEY`
 - OpenAI：添加 `OPENAI_API_KEY`
 - 通用兼容服务：添加 `LLM_API_KEY`
-
-可选 Variables：
-
 - `LLM_BASE_URL`，例如 `https://api.deepseek.com/v1`
-- `LLM_MODEL`，例如 `deepseek-chat`
+- `LLM_MODEL`，例如 `deepseek-v4`
 - `LLM_CONCURRENCY`，模型并发数，默认 `2`
 - `MAX_STORED_PAPERS`，最多保存论文数，默认 `300`，设为 `0` 表示不按数量裁剪
 - `MAX_DATA_BYTES`，`web/data/papers.json` 最大字节数，默认 `5242880`，设为 `0` 表示不按大小裁剪
 
 `LLM_BASE_URL` 和 `LLM_MODEL` 也可以放在 Secrets 中；workflow 会优先读取 Variables，未设置时读取 Secrets。
+![Uploading image.png…]()
 
 不配置 API key 时，项目仍会正常抓取论文，但中文总结会退化为基础摘要。
 
