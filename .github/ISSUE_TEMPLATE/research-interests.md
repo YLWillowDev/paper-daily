@@ -16,6 +16,61 @@ assignees: ''
     { "type": "google_scholar_serpapi", "name": "Google Scholar", "enabled": false },
     { "type": "feed", "name": "自定义期刊 RSS", "url": "https://example.com/rss.xml", "enabled": false }
   ],
+  "conference_sources": {
+    "enabled": true,
+    "include_default_venues": false,
+    "current_year": 2026,
+    "lookback_years": 2,
+    "venues": [
+      {
+        "id": "isca",
+        "name": "ISCA",
+        "enabled": true,
+        "group": "computer architecture",
+        "dblp_toc_patterns": ["db/conf/isca/isca{year}.bht"]
+      },
+      {
+        "id": "micro",
+        "name": "MICRO",
+        "enabled": true,
+        "group": "computer architecture",
+        "dblp_toc_patterns": ["db/conf/micro/micro{year}.bht"]
+      },
+      {
+        "id": "hpca",
+        "name": "HPCA",
+        "enabled": true,
+        "group": "computer architecture",
+        "dblp_toc_patterns": ["db/conf/hpca/hpca{year}.bht"]
+      },
+      {
+        "id": "asplos",
+        "name": "ASPLOS",
+        "enabled": true,
+        "group": "computer architecture",
+        "dblp_toc_patterns": [
+          "db/conf/asplos/asplos{year}-1.bht",
+          "db/conf/asplos/asplos{year}-2.bht",
+          "db/conf/asplos/asplos{year}-3.bht",
+          "db/conf/asplos/asplos{year}-4.bht"
+        ]
+      },
+      {
+        "id": "mlsys",
+        "name": "MLSys",
+        "enabled": true,
+        "group": "systems for machine learning",
+        "dblp_toc_patterns": ["db/conf/mlsys/mlsys{year}.bht"]
+      },
+      {
+        "id": "eurosys",
+        "name": "EuroSys",
+        "enabled": true,
+        "group": "systems",
+        "dblp_toc_patterns": ["db/conf/eurosys/eurosys{year}.bht"]
+      }
+    ]
+  },
   "topics": [
     {
       "id": "llm_low_precision_quantization",
